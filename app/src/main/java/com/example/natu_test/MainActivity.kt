@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
+    //jawaban no 4
     private fun numberTransaction(){
         var currentTime = LocalDateTime.now()
         val formatter = DateTimeFormatter.ofPattern("yyMMdd")
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         loadData()
     }
 
+    //jawaban no 8
     private fun hitungPajak(total: Int, tax: Int){
         var tax_value = total*tax/100
         var net_sales = total-tax_value
@@ -62,6 +64,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
+    //jawaban no 9
     private fun discount(total: Int, discounts: List<Int>){
         var tot_discount_value = 0
         for (i in 0 until discounts.size){
@@ -72,6 +75,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         testLabel.text = "total diskon : $tot_discount_value \n total pembayaran $total_harga"
     }
 
+    //jawaban no 10
     private fun shareRevenue(total:Int,markUp_percent:Int , share_percent:Int){
         var markup_value = total*markUp_percent/100
         var price = total+markup_value
